@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1633444928810,
+  "lastUpdate": 1633445028895,
   "repoUrl": "https://github.com/robertsben/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -63418,6 +63418,46 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000065984702486157625",
             "extra": "mean: 73.35639878242941 usec\nrounds: 5750"
+          }
+        ]
+      }
+    ],
+    "OpenTelemetry Python Benchmarks - Python 3.7 - sdk": [
+      {
+        "commit": {
+          "author": {
+            "email": "81902191+oxeye-nikolay@users.noreply.github.com",
+            "name": "Nikolay Sokolik",
+            "username": "oxeye-nikolay"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c9b18c66229da61065846ba9ace25a5f5c2106b8",
+          "message": "Updated bootstrap_gen.py for pika instrumentation in the contrib (#2160)\n\nCo-authored-by: Owais Lone <owais@users.noreply.github.com>\r\nCo-authored-by: Diego Hurtado <ocelotl@users.noreply.github.com>",
+          "timestamp": "2021-10-05T11:55:44Z",
+          "tree_id": "9515e73819e8cd35b72b423cc9e6e9e410be21d2",
+          "url": "https://github.com/robertsben/opentelemetry-python/commit/c9b18c66229da61065846ba9ace25a5f5c2106b8"
+        },
+        "date": 1633445017452,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 21911.85834323615,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000001013568871819834",
+            "extra": "mean: 45.63738886659445 usec\nrounds: 4958"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 16448.541693232753,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000019279919634662202",
+            "extra": "mean: 60.79566314449744 usec\nrounds: 5584"
           }
         ]
       }
