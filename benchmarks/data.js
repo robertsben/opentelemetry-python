@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1633445715399,
+  "lastUpdate": 1633446086807,
   "repoUrl": "https://github.com/robertsben/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -63538,6 +63538,46 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000001597093930601634",
             "extra": "mean: 49.54225313164647 usec\nrounds: 6945"
+          }
+        ]
+      }
+    ],
+    "OpenTelemetry Python Benchmarks - Python pypy-3.7 - propagator": [
+      {
+        "commit": {
+          "author": {
+            "email": "81902191+oxeye-nikolay@users.noreply.github.com",
+            "name": "Nikolay Sokolik",
+            "username": "oxeye-nikolay"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c9b18c66229da61065846ba9ace25a5f5c2106b8",
+          "message": "Updated bootstrap_gen.py for pika instrumentation in the contrib (#2160)\n\nCo-authored-by: Owais Lone <owais@users.noreply.github.com>\r\nCo-authored-by: Diego Hurtado <ocelotl@users.noreply.github.com>",
+          "timestamp": "2021-10-05T11:55:44Z",
+          "tree_id": "9515e73819e8cd35b72b423cc9e6e9e410be21d2",
+          "url": "https://github.com/robertsben/opentelemetry-python/commit/c9b18c66229da61065846ba9ace25a5f5c2106b8"
+        },
+        "date": 1633446075363,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 643484.9390169684,
+            "unit": "iter/sec",
+            "range": "stddev: 1.998158908640953e-7",
+            "extra": "mean: 1.5540379259344979 usec\nrounds: 68966"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 766897.6811837121,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000020996749272293263",
+            "extra": "mean: 1.303954914111294 usec\nrounds: 81968"
           }
         ]
       }
